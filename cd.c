@@ -8,7 +8,7 @@
 int cdFunc(config *build)
 {
 	register uint count = 0;
-	_Bool ableToChange = false;
+	bool ableToChange = false;
 
 	count = countArgs(build->args);
 	if (count == 1)
@@ -27,7 +27,7 @@ int cdFunc(config *build)
  * @build: input build
  * Return: true on success, false on failure
  */
-_Bool cdToHome(config *build)
+bool cdToHome(config *build)
 {
 	register int i;
 	char *str, *ptr;
@@ -51,7 +51,7 @@ _Bool cdToHome(config *build)
  * @build: input build
  * Return: true on success, false on failure
  */
-_Bool cdToPrevious(config *build)
+bool cdToPrevious(config *build)
 {
 	register int i;
 	char *str, *ptr;
@@ -81,7 +81,7 @@ _Bool cdToPrevious(config *build)
  * @build: input build
  * Return: true on success, false on failure
  */
-_Bool cdToCustom(config *build)
+bool cdToCustom(config *build)
 {
 	register int changeStatus;
 
@@ -100,7 +100,7 @@ _Bool cdToCustom(config *build)
  * @build: input build
  * Return: true on success false on failure
  */
-_Bool updateEnviron(config *build)
+bool updateEnviron(config *build)
 {
 	register int i;
 
