@@ -19,7 +19,7 @@ int helpFunc(config *build)
 		{NULL, NULL}
 	};
 	register int i = 0, j = 1, argCount = countArgs(build->args);
-	_Bool foundCommand = false;
+	bool foundCommand = false;
 
 	if (argCount == 1)
 		return (displayHelpMenu());

@@ -55,7 +55,7 @@ int setenvFunc(config *build)
 int unsetenvFunc(config *build)
 {
 	register int foundVar, i = 1;
-	_Bool foundMatch = false;
+	bool foundMatch = false;
 
 	while (build->args[i])
 	{

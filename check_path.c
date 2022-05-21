@@ -4,13 +4,13 @@
  * checkPath - searches $PATH for directory of command
  * @build: input build
  */
-_Bool checkPath(config *build)
+bool checkPath(config *build)
 {
 	register int len;
 	static char buffer[BUFSIZE];
 	struct stat st;
 	char *tok, *copy, *delim = ":", *tmp;
-	_Bool inLoop = false;
+	bool inLoop = false;
 
 	if (checkEdgeCases(build))
 		return (true);
@@ -50,7 +50,7 @@ _Bool checkPath(config *build)
  * @build: input build
  * Return: true if found, false if not
  */
-_Bool checkEdgeCases(config *build)
+bool checkEdgeCases(config *build)
 {
 	char *copy;
 	struct stat st;
