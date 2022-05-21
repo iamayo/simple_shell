@@ -14,6 +14,9 @@
 #include <limits.h>
 #include <stddef.h>
 #include <stdarg.h>
+#include <assert.h>
+#include <ctype.h>
+#include <iso646.h>
 
 /* ERRORS */
 #define BUFSIZE 256
