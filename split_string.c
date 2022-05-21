@@ -6,7 +6,7 @@
  * @build: input build
  * Return: true if able to split, false if not
  */
-_Bool splitString(config *build)
+bool splitString(config *build)
 {
 	register unsigned int i = 0;
 	char *tok, *cpy;
@@ -39,7 +39,7 @@ _Bool splitString(config *build)
 unsigned int countWords(char *str)
 {
 	register int words = 0;
-	_Bool wordOn = false;
+	bool wordOn = false;
 
 	while (*str)
 	{
@@ -60,7 +60,7 @@ unsigned int countWords(char *str)
  * @c: input char
  * Return: true or false
  */
-_Bool isSpace(char c)
+bool isSpace(char c)
 {
 	return (c == ' ');
 }
